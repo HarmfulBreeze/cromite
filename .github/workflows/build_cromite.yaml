@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       sha:
-        description: 'uazo/cromite SHA'
+        description: 'HarmfulBreeze/cromite SHA'
         required: true
         default: ''
       target_os:

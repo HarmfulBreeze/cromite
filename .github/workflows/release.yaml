@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       sha:
-        description: 'uazo/cromite SHA'
+        description: 'HarmfulBreeze/cromite SHA'
         required: true
         default: ''
       type:
@@ -51,10 +51,10 @@ jobs:
           wget https://github.com/cli/cli/releases/download/v2.18.1/gh_2.18.1_linux_amd64.tar.gz
           tar xfz gh_2.18.1_linux_amd64.tar.gz
 
-      - name: Checkout 'uazo/cromite'
+      - name: Checkout 'HarmfulBreeze/cromite'
         uses: actions/checkout@v2
         with:
-            repository: 'uazo/cromite'
+            repository: 'HarmfulBreeze/cromite'
             path: 'cromite'
             fetch-depth: 1
 
