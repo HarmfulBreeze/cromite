@@ -1,0 +1,19 @@
+From: HarmfulBreeze <HarmfulBreeze@users.noreply.github.com>
+Date: Tue, 26 Mar 2024 16:57:00 +0100
+Subject: Enable autofill settings by default
+
+3rd party autofill support has been added.
+
+License: MIT License - https://spdx.org/licenses/MIT.html
+---
+ .../components/autofill/core/common/autofill_features_cc/Enable-autofill-settings-by-default.inc         | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cromite_flags/components/autofill/core/common/autofill_features_cc/Enable-autofill-settings-by-default.inc
+
+diff --git a/cromite_flags/components/autofill/core/common/autofill_features_cc/Enable-autofill-settings-by-default.inc b/components/autofill/core/common/autofill_features_cc/Enable-autofill-settings-by-default.inc
+new file mode 100644
+--- /dev/null
++++ b/components/autofill/core/common/autofill_features_cc/Enable-autofill-settings-by-default.inc
+@@ -0,0 +1 @@
++SET_CROMITE_FEATURE_ENABLED(kAutofillVirtualViewStructure);
+--

@@ -1,0 +1,33 @@
+From: Pierre GRASSER <HarmfulBreeze@users.noreply.github.com>
+Date: Tue, 26 Mar 2024 14:40:00 +0000
+Subject: Cromite Branding, Light Version
+
+License: GPL-2.0-or-later - https://spdx.org/licenses/GPL-2.0-or-later.html
+---
+ .../strings/android/browser_ui_strings.grd    |   2 +-
+ ui/base/ui_base_features.cc                   |   2 +
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/components/browser_ui/strings/android/browser_ui_strings.grd b/components/browser_ui/strings/android/browser_ui_strings.grd
+--- a/components/browser_ui/strings/android/browser_ui_strings.grd
++++ b/components/browser_ui/strings/android/browser_ui_strings.grd
+@@ -994,7 +994,7 @@
+ 
+       <!-- Accessibility preferences -->
+       <message name="IDS_PREFS_ACCESSIBILITY" desc="Title of Accessibility settings, which allows the user to change webpage font sizes. [CHAR_LIMIT=32]">
+-        Accessibility
++        Accessibility and UI
+       </message>
+       <message name="IDS_FONT_SIZE" desc="Title for font size preference.">
+         Text scaling
+diff --git a/ui/base/ui_base_features.cc b/ui/base/ui_base_features.cc
+--- a/ui/base/ui_base_features.cc
++++ b/ui/base/ui_base_features.cc
+@@ -643,4 +643,6 @@ BASE_FEATURE(kUseGammaContrastRegistrySettings,
+              base::FEATURE_DISABLED_BY_DEFAULT);
+ #endif  // BUILDFLAG(IS_WIN)
+ 
++SET_CROMITE_FEATURE_ENABLED(kChromeRefresh2023);
++SET_CROMITE_FEATURE_ENABLED(kChromeWebuiRefresh2023);
+ }  // namespace features
+--
